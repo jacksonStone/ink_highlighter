@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>ink</string>
+	</array>
+	<key>foldingStartMarker</key>
+	<string>\b(repeat|function[\w ]+)\:</string>
+	<key>foldingStopMarker</key>
+	<string>[\w ]+\.|[0-9]+ times\.|\b(until)[\w\s]+</string>
+	<key>name</key>
+	<string>Ink</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>match</key>
+			<string>\b(to|that can|named|and|with|in|where)\b</string>
+			<key>name</key>
+			<string>keyword</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b([0-9]+)\b</string>
+			<key>name</key>
+			<string>constant.numeric</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(function|variable|as|is|variables|list|dictionary)\b</string>
+			<key>name</key>
+			<string>variable</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(repeat|until|times|input|output|inputs|outputs|if|otherwise)\b</string>
+			<key>name</key>
+			<string>entity.name.class</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(\*|\+|\=|\-|\/|result of|the|print|take|is greater than|set|show|store)</string>
+			<key>name</key>
+			<string>keyword.operator</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(create|result in)\b</string>
+			<key>name</key>
+			<string>entity.name.function</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>"</string>
+			<key>end</key>
+			<string>"</string>
+			<key>name</key>
+			<string>string</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>\\.</string>
+					<key>name</key>
+					<string>constant.character.escape.untitled</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>\b(note):</string>
+			<key>end</key>
+			<string>\.</string>
+			<key>name</key>
+			<string>comment</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>\b(bignote):</string>
+			<key>end</key>
+			<string>\b(end bignote.)</string>
+			<key>name</key>
+			<string>comment.multiline</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.ink</string>
+	<key>uuid</key>
+	<string>643285DA-CD40-4514-A669-655DBE5AFADD</string>
+</dict>
+</plist>
